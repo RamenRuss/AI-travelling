@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+.idea/
+.vscode/
+eval/results_*.csv
+app/.cache/

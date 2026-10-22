@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Бухта — ассистент Приморского края</title>
+  <meta name="description" content="Бухта — AI-ассистент для путешествий по Приморскому краю: маршруты, места, погода, жильё и транспорт.">
+  <meta name="theme-color" content="#0F52BA">
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32.png">
+  <link rel="alternate icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/static/css/styles.css?v=11">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 9c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0M3 15c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-mount" viewBox="0 0 24 24"><path d="M3 18l6-9 4 6 2-3 6 6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M5 20V9l7-5 7 5v11M10 20v-6h4v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 002 2v9M5 3v6M9 3v6M17 21V3c-2 1-3 4-3 7s1 4 3 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.6 9.5a2.5 2.5 0 114 2c-.9.6-1.6 1-1.6 2.2M12 16.8v.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v6M12 7.5v.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 4l9 16H3zM12 10v4.5M12 17.5v.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M6 6l12 12" stroke="currentColor" stroke-width="1.9"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.6 1.5A3.3 3.3 0 0117 18z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-rain" viewBox="0 0 24 24"><path d="M7 15a4 4 0 010-8 5.5 5.5 0 0110.6 1.5A3.3 3.3 0 0117 15zM8 18.5l-1 2M12 18.5l-1 2M16 18.5l-1 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6M3 14h18v4M21 14v-2a3 3 0 00-3-3h-7v5M7 11.5v.1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H5v16h5M15 8l4 4-4 4M19 12H9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="logo" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0F52BA"/><path d="M9 21c3.5-4.5 7-4.5 10.5 0s7 4.5 10.5 0 5-3.4 9-1.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><path d="M9 30c3.5-4.5 7-4.5 10.5 0s7 4.5 10.5 0 5-3.4 9-1.5" fill="none" stroke="#8FB4EE" stroke-width="3.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="app" id="app">
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><svg class="logo"><use href="#logo"/></svg><span>Бухта</span>
+      <button class="icon-btn only-m" id="closeSide" aria-label="Закрыть"><svg><use href="#i-close"/></svg></button></div>
+    <button class="new-chat" id="newChat"><svg><use href="#i-route"/></svg>Новый маршрут</button>
+    <div class="side-label">Мои маршруты</div>
+    <nav class="recent" id="recent"></nav>
+
+    <div class="profile-wrap">
+      <div class="menu" id="menu" hidden>
+        <button data-act="settings"><svg><use href="#i-gear"/></svg>Настройки</button>
+        <button data-act="about"><svg><use href="#i-info"/></svg>О проекте и справка</button>
+        <hr>
+        <button data-act="clear"><svg><use href="#i-trash"/></svg>Очистить историю</button>
+        <button data-act="logout"><svg><use href="#i-logout"/></svg>Выйти</button>
+      </div>
+      <button class="profile" id="profile">
+        <span class="avatar" id="avatar"></span><span class="pname" id="pname"></span>
+        <svg class="chev"><use href="#i-chev"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar only-m">
+      <button class="icon-btn round" id="openSide" aria-label="Меню"><svg><use href="#i-menu"/></svg></button>
+      <div class="top-brand"><svg class="logo"><use href="#logo"/></svg><span>Бухта</span></div>
+      <span class="spacer"></span>
+    </header>
+
+    <svg class="waves" viewBox="0 0 1400 520" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+      <g fill="none" stroke="#D5DEEA" stroke-width="2">
+        <path d="M-50 150c250-80 450 10 700 10s450-110 800-60"/>
+        <path d="M-50 220c250-70 450 30 700 30s450-120 800-70"/>
+        <path d="M-50 300c250-80 450 20 700 20s450-110 800-60"/>
+        <path d="M-50 370c250-70 450 30 700 30s450-120 800-70"/>
+      </g>
+    </svg>
+
+    <section class="welcome" id="welcome">
+      <div class="hero">
+        <div class="eyebrow">Ассистент Приморского края</div>
+        <h1>Здравствуйте, <span id="hname"></span>!</h1>
+        <p class="lead">От сопок до бухт: спросите про маршруты, места, погоду, жильё и транспорт по Приморскому краю.</p>
+      </div>
+      <div class="slot" id="slotWelcome"></div>
+    </section>
+
+    <section class="chat" id="chat" hidden><div class="thread" id="thread"></div></section>
+
+    <div class="dock" id="dock">
+      <div class="composer" id="composer">
+        <textarea id="input" rows="1" maxlength="1500" placeholder="Спросите Бухту о чём угодно в Приморье"></textarea>
+        <div class="crow">
+          <button class="send" id="send" aria-label="Отправить" disabled><svg><use href="#i-up"/></svg></button>
+        </div>
+      </div>
+      <div class="foot-note">Бухта отвечает только про Приморский край. Расписания, цены на жильё и АЗС — демонстрационные данные, проверяйте перед поездкой.</div>
+    </div>
+  </main>
+
+  <aside class="map-panel" id="mapPanel" aria-label="Карта маршрута">
+    <div class="mp-head">
+      <div><b id="mpTitle">Маршрут</b><small id="mpSub"></small></div>
+      <button class="icon-btn round" id="mapClose" aria-label="Закрыть карту"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="mp-days" id="mpDays" hidden></div>
+    <div class="mp-map" id="bigmap"></div>
+    <div class="mp-info" id="mpInfo"></div>
+  </aside>
+
+  <div class="auth" id="auth" hidden>
+    <svg class="waves" viewBox="0 0 1400 520" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><g fill="none" stroke="#D5DEEA" stroke-width="2"><path d="M-50 150c250-80 450 10 700 10s450-110 800-60"/><path d="M-50 260c250-70 450 30 700 30s450-120 800-70"/><path d="M-50 380c250-80 450 20 700 20s450-110 800-60"/></g></svg>
+    <div class="auth-card">
+      <div class="auth-brand"><svg class="logo"><use href="#logo"/></svg><span>Бухта</span></div>
+      <p class="auth-sub">Ассистент Приморского края</p>
+      <div class="tabs"><button id="tabLogin" class="on" type="button">Вход</button><button id="tabReg" type="button">Регистрация</button></div>
+      <form id="authForm" novalidate>
+        <div id="nameRow" class="two" hidden>
+          <label>Фамилия<input type="text" id="aSurname" autocomplete="family-name" maxlength="50" placeholder="Иванов"></label>
+          <label>Имя<input type="text" id="aName" autocomplete="given-name" maxlength="50" placeholder="Иван"></label>
+        </div>
+        <label>Email<input type="email" id="aEmail" autocomplete="email" maxlength="254" placeholder="ivan@example.com"></label>
+        <label>Пароль<input type="password" id="aPass" autocomplete="current-password" maxlength="128" placeholder="Минимум 8 символов"></label>
+        <div class="auth-err" id="aErr" hidden></div>
+        <button class="btn p wide" id="aSubmit" type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-back" id="modalBack" hidden>
+    <div class="modal" id="modal" role="dialog"></div>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/static/js/render.js?v=9"></script>
+<script src="/static/js/map.js?v=13"></script>
+<script src="/static/js/app.js?v=10"></script>
+</body>
+</html>

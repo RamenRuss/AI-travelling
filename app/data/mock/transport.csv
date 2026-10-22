@@ -1,0 +1,72 @@
+from,to,departure_point,departure_address,price_rub,transport_type,schedule
+Vladivostok,Nakhodka,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",450,bus,06:00-21:00
+Nakhodka,Vladivostok,Nakhodka Bus Station,"Nakhodkinsky Ave, 7, Nakhodka",450,bus,06:00-21:00
+Vladivostok,Artem,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",120,bus,06:00-23:00
+Artem,Vladivostok,Artem Bus Station,"Frunze St, 45/1, Artem",120,bus,05:30-22:30
+Vladivostok,Artem,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",90,commuter train,05:30-23:00
+Vladivostok,Ussuriysk,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",320,bus,06:00-22:00
+Ussuriysk,Vladivostok,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",320,bus,05:30-21:30
+Vladivostok,Ussuriysk,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",250,commuter train,05:00-23:00
+Vladivostok,Ussuriysk,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",1100,train,"06:40, 14:20, 22:10"
+Vladivostok,Partizansk,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",550,bus,07:00-18:00
+Vladivostok,Spassk-Dalniy,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",700,bus,07:00-17:00
+Vladivostok,Dalnegorsk,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1500,bus,"08:00, 17:00"
+Vladivostok,Arsenyev,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1300,bus,"07:30, 12:00, 17:00"
+Vladivostok,Lesozavodsk,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1250,bus,"08:00, 15:00"
+Vladivostok,Dalnerechensk,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1700,bus,"07:00, 16:00"
+Vladivostok,Dalnerechensk,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",1900,train,19:30
+Vladivostok,Bolshoy Kamen,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",300,bus,06:30-21:00
+Vladivostok,Fokino,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",320,bus,06:30-20:00
+Vladivostok,Slavyanka,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",600,bus,07:00-17:30
+Vladivostok,Pogranichny,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1000,bus,"07:00, 12:00, 16:00"
+Vladivostok,Kavalerovo,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1600,bus,07:30
+Vladivostok,Chuguevka,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",1750,bus,07:00
+Nakhodka,Artem,Nakhodka Bus Station,"Nakhodkinsky Ave, 7, Nakhodka",400,bus,06:00-20:00
+Nakhodka,Partizansk,Nakhodka Bus Station,"Nakhodkinsky Ave, 7, Nakhodka",150,bus,06:00-19:00
+Nakhodka,Ussuriysk,Nakhodka Bus Station,"Nakhodkinsky Ave, 7, Nakhodka",650,bus,07:00-17:00
+Artem,Ussuriysk,Artem Bus Station,"Frunze St, 45/1, Artem",200,bus,06:00-21:00
+Ussuriysk,Spassk-Dalniy,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",300,bus,06:00-19:00
+Ussuriysk,Pogranichny,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",450,bus,07:00-17:00
+Ussuriysk,Arsenyev,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",900,bus,"09:00, 15:00"
+Ussuriysk,Lesozavodsk,Ussuriysk Railway Station,"Vokzalnaya St, 2, Ussuriysk",600,train,"09:15, 17:40"
+Vladivostok,Artem (Airport VVO),Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",800,aeroexpress train,05:00-23:00
+Vladivostok,Artem (Airport VVO),Vladivostok city center,Pickup at any address on order,1800,taxi,24/7
+Vladivostok,Nakhodka,Vladivostok city center,Pickup at any address on order,9000,taxi,24/7
+Vladivostok,Ussuriysk,Vladivostok city center,Pickup at any address on order,5500,taxi,24/7
+Vladivostok,Moscow,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",38000,plane,"08:10, 13:45, 21:30"
+Vladivostok,Khabarovsk,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",9500,plane,"10:20, 18:05"
+Vladivostok,Khabarovsk,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",4500,train,20:15
+Artem,Nakhodka,Artem Bus Station,"Frunze St, 45/1, Artem",400,bus,05:30-19:30
+Ussuriysk,Nakhodka,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",650,bus,07:30-17:30
+Ussuriysk,Artem,Ussuriysk Bus Station,"Chicherina St, 121, Ussuriysk",200,bus,05:30-20:30
+Partizansk,Vladivostok,Partizansk Bus Station,"Kashina St, 60, Partizansk",550,bus,06:30-17:30
+Partizansk,Nakhodka,Partizansk Bus Station,"Kashina St, 60, Partizansk",150,bus,06:00-19:00
+Spassk-Dalniy,Vladivostok,Spassk-Dalniy Bus Station,"Andreevskaya St, 1, Spassk-Dalniy",700,bus,06:30-16:30
+Spassk-Dalniy,Ussuriysk,Spassk-Dalniy Bus Station,"Andreevskaya St, 1, Spassk-Dalniy",300,bus,06:00-19:00
+Dalnegorsk,Vladivostok,Dalnegorsk Bus Station,"Korzhevskaya St, 1, Dalnegorsk",1500,bus,"07:00, 16:00"
+Arsenyev,Vladivostok,Arsenyev Bus Station,"Vokzalnaya St, 1, Arsenyev",1300,bus,"07:00, 12:00, 17:00"
+Arsenyev,Ussuriysk,Arsenyev Bus Station,"Vokzalnaya St, 1, Arsenyev",900,bus,"08:30, 14:30"
+Lesozavodsk,Vladivostok,Lesozavodsk Bus Station,"Lagody St, 1a, Lesozavodsk",1250,bus,"07:30, 14:30"
+Dalnerechensk,Vladivostok,Dalnerechensk Bus Station,"Ussuriyskaya St, 64, Dalnerechensk",1700,bus,"06:30, 15:30"
+Bolshoy Kamen,Vladivostok,Bolshoy Kamen Bus Station,"Zelyonaya St, 1B, Bolshoy Kamen",300,bus,06:00-20:30
+Fokino,Vladivostok,Fokino Bus Station,"Klubnaya St, 1a, Fokino",320,bus,06:00-19:30
+Slavyanka,Vladivostok,Slavyanka Bus Station,"Leninskaya St, 73, Slavyanka",600,bus,06:30-17:00
+Slavyanka,Khasan,Slavyanka Bus Station,"Leninskaya St, 73, Slavyanka",150,bus,"08:00, 12:00, 16:00"
+Vladivostok,Khasan,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",800,bus,"07:00, 14:00"
+Pogranichny,Ussuriysk,Pogranichny Bus Station,"Krasnoarmeyskaya St, 4, Pogranichny",450,bus,06:30-16:30
+Kavalerovo,Vladivostok,Kavalerovo Bus Station,"Tsentralnaya St, 20, Kavalerovo",1600,bus,07:00
+Chuguevka,Vladivostok,Chuguevka Bus Station,"50 let Oktyabrya St, 202A, Chuguevka",1750,bus,07:00
+Ussuriysk,Vladivostok,Ussuriysk Railway Station,"Vokzalnaya St, 2, Ussuriysk",250,commuter train,05:00-23:00
+Artem,Vladivostok,Artem Railway Station,"Frunze St, 19A, Artem",90,commuter train,05:30-23:00
+Vladivostok,Nakhodka,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",800,train,08:30
+Vladivostok,Hunchun (China),Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",3500,international bus,08:00
+Vladivostok,Harbin (China),Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",7500,international bus,06:00
+Vladivostok,Busan (South Korea),Vladivostok Sea Terminal,"Nizhneportovaya St, 1, Vladivostok",28000,ferry,14:00
+Nakhodka,Busan (South Korea),Nakhodka Sea Terminal,"Portovaya St, 64, Nakhodka",26000,ferry,18:00
+Vladivostok,Sapporo,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",32000,plane,12:40
+Vladivostok,Novosibirsk,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",27000,plane,"10:20, 18:05"
+Vladivostok,St. Petersburg,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",42000,plane,"10:20, 18:05"
+Vladivostok,Yuzhno-Sakhalinsk,Vladivostok Airport (VVO),"Vladimira Saybelya St, 41, Artem (Vladivostok Airport)",14000,plane,11:30
+Vladivostok,Moscow,Vladivostok Railway Station,"Aleutskaya St, 2, Vladivostok",14500,train,23:50
+Vladivostok,Russky Island,Vladivostok Bus Station,"Russkaya St, 2A, Vladivostok",100,bus,06:00-22:00
+Vladivostok,Russky Island,Vladivostok city center,Pickup at any address on order,300,taxi,24/7

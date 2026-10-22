@@ -1,0 +1,29 @@
+city,city_ru,kind,lat,lon,aliases
+Vladivostok,Владивосток,city,43.1155,131.8855,Владик
+Nakhodka,Находка,city,42.8239,132.8735,
+Ussuriysk,Уссурийск,city,43.7972,131.9518,Ussuriisk
+Artem,Артём,city,43.3547,132.1881,Артем
+Partizansk,Партизанск,city,43.1281,133.1269,
+Spassk-Dalniy,Спасск-Дальний,city,44.5906,132.8147,Спасск;Spassk-Dalny
+Dalnegorsk,Дальнегорск,city,44.5547,135.5667,
+Arsenyev,Арсеньев,city,44.1622,133.284,Arsenev
+Slavyanka,Славянка,city,42.8667,131.3833,
+Khasan,Хасан,city,42.4297,130.6439,
+Lesozavodsk,Лесозаводск,city,45.4778,133.4181,
+Dalnerechensk,Дальнереченск,city,45.93,133.73,
+Bolshoy Kamen,Большой Камень,city,43.1111,132.3453,Bolshoi Kamen
+Fokino,Фокино,city,42.9719,132.4108,
+Pogranichny,Пограничный,city,44.4167,131.4,Pogranichnyi
+Kavalerovo,Кавалерово,city,44.2711,135.0653,
+Chuguevka,Чугуевка,city,44.165,133.875,Chuguyevka
+Artem (Airport VVO),"Аэропорт Владивосток (Кневичи, г. Артём)",destination,,,Аэропорт Владивосток;Аэропорт;Airport VVO;VVO
+Russky Island,остров Русский,destination,,,Русский;Russky
+Busan (South Korea),Пусан (Южная Корея),destination,,,Пусан;Busan
+Harbin (China),Харбин (Китай),destination,,,Харбин;Harbin
+Hunchun (China),Хуньчунь (Китай),destination,,,Хуньчунь;Hunchun
+Khabarovsk,Хабаровск,destination,,,
+Moscow,Москва,destination,,,
+Novosibirsk,Новосибирск,destination,,,
+Sapporo,Саппоро (Япония),destination,,,Саппоро
+St. Petersburg,Санкт-Петербург,destination,,,Питер;Санкт Петербург;Saint Petersburg
+Yuzhno-Sakhalinsk,Южно-Сахалинск,destination,,,

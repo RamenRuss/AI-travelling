@@ -1,0 +1,71 @@
+name,city,type,price_per_night_rub
+Hyundai Hotel,Vladivostok,hotel,9500
+Equator Hotel,Vladivostok,hotel,6800
+Azimut Hotel Vladivostok,Vladivostok,hotel,7200
+Hotel Gavan,Vladivostok,hotel,5200
+Zolotoy Rog Hotel,Vladivostok,hotel,4500
+Hostel Rus,Vladivostok,hostel,1200
+Hostel Sopka,Vladivostok,hostel,1000
+Guest House Mayak,Vladivostok,guest house,2800
+Apartments Morskoy,Vladivostok,apartment,4000
+Hotel Nakhodka,Nakhodka,hotel,3800
+Hotel Moryak,Nakhodka,hotel,3200
+Hostel Bukhta,Nakhodka,hostel,900
+Recreation Base Vostok,Nakhodka,recreation base,2500
+Hotel Artem,Artem,hotel,2800
+Guest House Airport,Artem,guest house,2000
+Hotel Ussuri,Ussuriysk,hotel,3000
+Hotel Ussuriysk Plaza,Ussuriysk,hotel,3500
+Hostel Vokzal,Ussuriysk,hostel,800
+Recreation Base Lazurnaya,Ussuriysk,recreation base,2200
+Hotel Partizan,Partizansk,hotel,2200
+Guest House Zaliv,Partizansk,guest house,1800
+Recreation Base Sosnovy Bor,Partizansk,recreation base,2000
+Hotel Spassk,Spassk-Dalniy,hotel,2000
+Guest House Khanka,Spassk-Dalniy,guest house,1700
+Recreation Base Khanka Lake,Spassk-Dalniy,recreation base,2400
+Hotel Dalnegorsk,Dalnegorsk,hotel,2300
+Recreation Base Rudnaya,Dalnegorsk,recreation base,1900
+Hotel Arsenyev,Arsenyev,hotel,2100
+Guest House Taiga,Arsenyev,guest house,1600
+Hotel Lesozavodsk,Lesozavodsk,hotel,1900
+Hotel Dalnerechensk,Dalnerechensk,hotel,1800
+Hotel Bolshoy Kamen,Bolshoy Kamen,hotel,2300
+Recreation Base Zvezda,Bolshoy Kamen,recreation base,2100
+Guest House Fokino,Fokino,guest house,1700
+Hotel Slavyanka,Slavyanka,hotel,2400
+Recreation Base Teplye Ozera,Slavyanka,recreation base,2600
+Guest House Khasan,Slavyanka,guest house,2000
+Hotel Pogranichny,Pogranichny,hotel,1700
+Hotel Kavalerovo,Kavalerovo,hotel,1600
+Recreation Base Chuguevka,Chuguevka,recreation base,1500
+Hotel Versailles,Vladivostok,hotel,6100
+Hotel Primorye,Vladivostok,hotel,4800
+Hotel Ibis Vladivostok,Vladivostok,hotel,5600
+Hotel Vladivostok,Vladivostok,hotel,5900
+Hotel Sunrise,Vladivostok,hotel,3900
+Hostel Pacific,Vladivostok,hostel,1100
+Hostel Zhemchuzhina,Vladivostok,hostel,950
+Apartments Svetlanskaya,Vladivostok,apartment,3600
+Apartments Russky Island,Vladivostok,apartment,4500
+Recreation Base Shamora,Artem,recreation base,3000
+Recreation Base Ajax Bay,Vladivostok,recreation base,3400
+Recreation Base Patrokl,Vladivostok,recreation base,2700
+Hotel Sanatorium Okeanskiy,Nakhodka,hotel,3600
+Apartments Nakhodka Center,Nakhodka,apartment,2700
+Guest House Trudovoye,Artem,guest house,1900
+Hostel Artem,Artem,hostel,800
+Apartments Ussuriysk Center,Ussuriysk,apartment,2200
+Guest House Raisovka,Ussuriysk,guest house,1800
+Hotel Spassk Plaza,Spassk-Dalniy,hotel,2500
+Guest House Dalnegorsk,Dalnegorsk,guest house,1500
+Hotel Sihote-Alin,Arsenyev,hotel,2400
+Apartments Partizansk,Partizansk,apartment,1700
+Hostel Lesozavodsk,Lesozavodsk,hostel,700
+Guest House Dalnerechensk,Dalnerechensk,guest house,1400
+Recreation Base Kedrovaya Pad,Khasan,recreation base,2300
+Hotel Khasan,Khasan,hotel,2100
+Guest House Posyet,Khasan,guest house,2200
+Recreation Base Vityaz,Fokino,recreation base,2000
+Hotel Pogranichny Plaza,Pogranichny,hotel,2000
+Guest House Kavalerovo,Kavalerovo,guest house,1300

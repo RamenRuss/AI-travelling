@@ -1,0 +1,38 @@
+station_name,city,ai92,ai95,ai98,ai100,diesel
+Rosneft #1,Vladivostok,1,1,1,0,1
+Lukoil #2,Vladivostok,1,1,1,0,1
+Gazpromneft #3,Vladivostok,1,1,0,1,1
+TNK #4,Vladivostok,1,1,0,0,1
+Neftemagistral #5,Vladivostok,1,1,0,0,1
+PTK #6,Vladivostok,1,1,0,0,0
+Sakhalin Oil #7,Vladivostok,1,1,1,0,1
+Rosneft #1,Nakhodka,1,1,0,0,1
+Lukoil #2,Nakhodka,1,1,1,0,1
+Gazpromneft #3,Nakhodka,1,1,0,0,1
+Neftemagistral #4,Nakhodka,1,1,0,0,1
+Rosneft #1,Artem,1,1,0,0,1
+Lukoil #2,Artem,1,1,0,0,1
+TNK #3,Artem,1,1,0,0,1
+Rosneft #1,Ussuriysk,1,1,1,0,1
+Lukoil #2,Ussuriysk,1,1,0,0,1
+Gazpromneft #3,Ussuriysk,1,1,0,0,1
+Neftemagistral #4,Ussuriysk,1,1,0,0,1
+Rosneft #1,Partizansk,1,1,0,0,1
+Lukoil #2,Partizansk,1,1,0,0,1
+Rosneft #1,Spassk-Dalniy,1,1,0,0,1
+Neftemagistral #2,Spassk-Dalniy,1,1,0,0,1
+Rosneft #1,Dalnegorsk,1,1,0,0,1
+Lukoil #2,Dalnegorsk,1,0,0,0,1
+Rosneft #1,Arsenyev,1,1,0,0,1
+Lukoil #2,Arsenyev,1,1,0,0,1
+Rosneft #1,Lesozavodsk,1,1,0,0,1
+Neftemagistral #2,Lesozavodsk,1,0,0,0,1
+Rosneft #1,Dalnerechensk,1,1,0,0,1
+Lukoil #2,Dalnerechensk,1,0,0,0,1
+Rosneft #1,Bolshoy Kamen,1,1,0,0,1
+TNK #2,Bolshoy Kamen,1,1,0,0,1
+Rosneft #1,Fokino,1,1,0,0,1
+Lukoil #1,Slavyanka,1,1,0,0,1
+Rosneft #1,Pogranichny,1,1,0,0,1
+Rosneft #1,Kavalerovo,1,1,0,0,1
+Neftemagistral #1,Chuguevka,1,0,0,0,1
