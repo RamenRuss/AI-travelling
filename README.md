@@ -11,6 +11,7 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
 set SPIRIT_API_KEY=ваш_ключ
+copy .env.example .env
 uvicorn app.main:app --port 5000
 ```
 
